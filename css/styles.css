@@ -13,7 +13,6 @@
 }
 
 body {
-  margin: 0;
   background-color: var(--primary-color);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -22,6 +21,8 @@ body {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .link {
@@ -44,11 +45,15 @@ body {
 /*---------------HEADER---------------*/
 
 .logo-web {
+  margin: 0;
+  padding: 0;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+  display: flex;
+  outline: 2px solid tomato;
 }
 .logo-studio {
   font-family: Raleway;
@@ -70,6 +75,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-title-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link:hover,
 .header-link:focus {
@@ -89,18 +97,28 @@ body {
 .header-tel:focus {
   color: var(--accent-color);
 }
+.header-list {
+  display: flex;
+  outline: 2px solid tomato;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 /*----------------MAIN------------*/
 .main {
   background-color: #2f303a;
+  outline: 2px solid tomato;
+  text-align: center;
 }
 .main-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: #ffffff;
-  text-align: center;
   text-transform: uppercase;
 }
 .main-btn {
@@ -117,6 +135,15 @@ body {
   background-color: var(--second-btn-color);
 }
 /*--------------SECTION----------*/
+.section-list {
+  outline: 2px solid tomato;
+}
+.about {
+  outline: 2px solid tomato;
+}
+.about-command {
+  outline: 2px solid tomato;
+}
 .section-title {
   font-weight: 700;
   font-size: 14px;
@@ -152,6 +179,7 @@ body {
 /*---------------FOOTER----------*/
 .footer {
   background-color: var(--footer-color);
+  outline: 2px solid tomato;
 }
 .footer-text {
   font-style: normal;
