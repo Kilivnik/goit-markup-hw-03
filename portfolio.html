@@ -15,32 +15,40 @@
 <body>
     <!-- Шапка сайта  -->
     <header class="header">
-        <nav class="header-navigation">
-            <a class="link logo-web" href="./index.html">Web<span class="logo-studio">Studio</span></a>
-            <ul class="list header-list">
-                <li class="header-item"><a class="link header-link" href="./index.html">Студия</a></li>
-                <li class="header-item"><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
-                <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
-            </ul>
-            <ul class="list header-list">
-                <li class="header-item"><a class="link header-mail" href="mailto:http://info@devstudio.com">info@devstudio.com</a></li>
-                <li class="header-item"><a class="link header-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </nav>
+        <div class="container header-container">
+            <nav class="header-navigation">
+                <a class="link logo logo-web" href="./index.html">Web<span class=" logo logo-studio">Studio</span></a>
+                <ul class="list header-list">
+                    <li class="header-item"><a class="link header-link" href="./index.html">Студия</a></li>
+                    <li class="header-item"><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-connect">
+                <ul class="list header-list">
+                    <li class="header-item"><a class="link header-mail"
+                            href="mailto:http://info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="header-item"><a class="link header-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
+
     <main>
         <!-- Фильтры -->
-        <section class="filters">
-            <ul class="filters-list list">
-                <li class="filters-item"><button class="filters-btn" type="button">Все</button></li>
-                <li class="filters-item"><button class="filters-btn" type="button">Веб-сайты</button></li>
-                <li class="filters-item"><button class="filters-btn" type="button">Приложения</button></li>
-                <li class="filters-item"><button class="filters-btn" type="button">Дизайн</button></li>
-                <li class="filters-item"><button class="filters-btn" type="button">Маркетинг</button></li>
-            </ul>
+        <section class="section filters">
+            <div class="container">
+                <ul class="filters-list list">
+                    <li class="filters-item"><button class="filters-btn button" type="button">Все</button></li>
+                    <li class="filters-item"><button class="filters-btn button" type="button">Веб-сайты</button></li>
+                    <li class="filters-item"><button class="filters-btn button" type="button">Приложения</button></li>
+                    <li class="filters-item"><button class="filters-btn button" type="button">Дизайн</button></li>
+                    <li class="filters-item"><button class="filters-btn button" type="button">Маркетинг</button></li>
+                </ul>
+            </div>
         </section>
         <!-- Портфолио -->
-        <section class="portfolio">
+        <section class="section portfolio">
             <h1 class="visually-hidden">Портфолио</h1>
             <ul class="portfolio-list list">
                 <li class="portfolio-item">
@@ -114,13 +122,15 @@
     </main>
 
     <!-- Футер -->
-    <footer class="footer">
-        <a class="link logo-web" href="./index.html">Web<span class="logo-studio-footer">Studio</span></a>
-        <address class="footer-address">
-            <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="footer-mail link" href="mailto:https://info@example.com">https://info@example.com</a> <br />
-            <a class="footer-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
-        </address>
+    <footer class="footer section">
+        <div class="container">
+            <a class="link logo logo-footer" href="./index.html">Web<span class=" logo logo-studio-footer">Studio</span></a>
+            <address class="footer-address">
+                <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
+                <a class="footer-mail link" href="mailto:https://info@example.com">https://info@example.com</a> <br />
+                <a class="footer-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
+            </address>
+        </div>
     </footer>
 </body>
 </html>
