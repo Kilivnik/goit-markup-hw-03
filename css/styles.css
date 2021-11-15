@@ -309,6 +309,8 @@ body {
 /*---------------FOOTER----------*/
 .footer {
   background-color: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-item:not(:last-child) {
